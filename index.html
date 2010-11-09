@@ -1,20 +1,51 @@
 ---
-layout: default
+layout: base
 ---
-
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-
-  <h1>Awesome Projects</h1>
-  <ul class="posts">
-    <li><a href="http://awesome.naquadah.org/">Awesome:</a> The only useable window manager :)</li>
-    <li><a href="http://github.com/mojombo/jekyll/">Jekyll:</a> A simple, blog aware, static site generator (used for this site).</li>
-  </ul>
+<h2>Welcome</h2>
+<div id="intro">
+<p>
+Welcome to "Tunnel vision". My little space on the web. I'm an Indian by
+birth and hail from Kerala (one of the southernmost states of the
+country).
+</p>
+<p>
+I'm one of those "Computer professionals" you bump into in Bangalore
+although my passions lie in different directions. I'm an avid Python
+programmer and a somewhat active member of the Bangalore Python User
+Group. I also take a more than average interest in the Emacs editor.
+</p>
+<p>
+I'm a computer science and mathematics enthusiast. I'm a muslim by
+birth and now by choice.
+</p>
+<p>
+I take an interest in programming, poetry and calligraphy among other
+things. I'm a reasonably avid reader and enjoy the company of people
+who are passionate about a personal cause and strive to reach it.
+</p>
+<p>
+I'm a freelance programmer and trainer. I specialise in infrastructure
+work - development tools, test harnesses, build infrastructures etc. I
+mostly code in Python but am comfortable with a handful of other
+languages as well.
+</p>
+<p>
+I also conduct corporate trainings on the technologies I use. 
+</p>
 </div>
+<h2>Blog posts</h2>
+<ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <span class="date">{{ post.date | date_to_string }}</span>
+    &raquo; <a href="{{ post.url }}">{{ post.title }}</a> 
+  </li>
+  {% endfor %}
+</ul>
+<h2>Older content</h2>
+This site was originally hosted using a wordpress based system. The
+older content is available
+at <a href="http://nibrahim.net.in/journal">http://nibrahim.net.in/journal</a>.
+
 
 

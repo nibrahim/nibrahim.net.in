@@ -1,0 +1,123 @@
+body { 
+       background-color: #fff;
+       font-size: 10pt;
+       color: #333;
+       }
+
+#hd { 
+      background-image: url("/images/headerbg.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      vertical-align: center;      
+ }
+
+#hd h1 { 
+         font-size: 25pt;
+         text-align: center;
+         font-variant: small-caps;
+         letter-spacing: 5pt;
+         word-spacing: 15pt;
+         font-family: times;
+         /* background-image: url("/images/brokenline-bg.png"); */
+         /* background-position: bottom center; */
+         height: 137px;
+         }
+
+#hd h1 a { 
+           color: black;
+           text-decoration: none;
+           padding-top: 40px;
+           display:block;
+           text-align: center;
+ }
+
+#hd h3 { 
+         display:block;
+         
+ }
+
+span.date { 
+            color: #aaa;
+            font-family: Monaco, "Courier New", monospace;
+            font-size: 80%;
+            }
+
+span.categories { 
+                  color: #aaa;
+ }
+
+ul.posts li { 
+              line-height: 25pt;
+ }
+
+h2 { 
+     margin: 5pt 0;
+     text-align: left;
+     font-size: 18pt;
+     font-style:italic;
+     color: #bbb;
+     background-image: url("/images/brokenline.png");
+     background-repeat: repeat-x;
+     background-position: bottom center;
+
+     } 
+
+ul.places { 
+            text-align: right;
+            font-size: 10pt;
+ }
+
+ul.places li { 
+               line-height:2em;
+ }
+
+div.resume { 
+             text-align: right;
+             border: 1px solid black;
+             float: right;
+             
+ }
+
+#home { 
+        background-image: url("/images/brokenline-v.png");
+        background-repeat: repeat-y;
+        background-position: top left;
+        padding-left: 3em;
+        }
+
+
+div.footer { 
+             background-image: url("/images/brokenline-bg.png");
+             background-repeat: repeat-x;
+             background-position: top center;
+             font-variant: small-caps;
+             font-family: times;
+             text-align: center;
+             padding-top: 10pt;
+             font-size: 10pt;
+             color: black;
+             margin-top: 15pt;
+             }
+
+div.credits { 
+              background-color: #fafafa;
+              border-top: 3px double #aaa;
+              border-bottom: 1px solid #aaa;
+              padding: 3pt 0;
+              margin:0;
+              font-size: 8pt;
+ }
+
+#intro p { 
+           text-indent: 10pt;
+           margin: 5pt 0;
+ }
+
+#intro img { 
+             float: right;
+ }
+
+/* Emurse styling */
+#emurse_resume_badge_gogomonkey a	  {color: #3672a4;}
+#emurse_resume_badge_gogomonkey a:hover	  {color: #113249;}
+#emurse_resume_badge_gogomonkey	  td,#emurse_resume_badge_gogomonkey th { padding: 4px	  !important; }
