@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: PyCon India 2010
+wordpress_id: 276
+wordpress_url: http://nibrahim.net.in/journal/?p=276
+---
+We're working towards PyCon India 2010. The official website is at <a href="http://in.pycon.org/2010">http://in.pycon.org/2010</a>. The call for proposals is already out at <a href="http://in.pycon.org/2010/cfp">http://in.pycon.org/2010/cfp</a>. All ideas are welcome!
+
+We also need help with all aspects of the conference. Volunteers are in short supply so if you're interested, join the <a href="http://mail.python.org/mailman/listinfo/inpycon">InPyCon</a> mailing list and help out. 
+
+The conference will take place on the 25th and 26th of September at MSRIT, Bangalore. See you all there!

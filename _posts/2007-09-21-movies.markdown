@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: Movies
+wordpress_id: 72
+wordpress_url: http://nibrahim.net.in/journal/?p=72
+---
+I gave up on watching movies a few years ago. I haven't been to a theatre for over two years now. Sometimes, I rent an old movie and watch it. This averages out to about a movie every 45 days or so. I watch some old animated shows too but this is completely different from my early days in Bangalore when I used to watch around a movie per week at one of the local theatres. I had a couple of expriences that got me into my current situation with regards to cinema.
+<ol>
+	<li>The general quality of the stuff that one has to dish out a lot of money to see is pathetic. Arguably, there are classics that "one should not miss" but the overwhelming majority of stuff that comes out is absolutely horrible. A total waste of time and money. They're about as insightful or entertaining as one of those glossy film magazines that litter local bookstores. The same genres, the same stories, the same formulae (action, special effects, etc.) <em>as nauseam</em>. Even some of the better ones as so only by contrast. By themselves, they're usually pathetic.</li>
+	<li>The realisation that most of these movies are marketing tools. This first occurred to me when I saw I, Robot. They have a couple of subtle ads in the movie for Reebok sneakers and JVC (I think). The bit hit was when Batman begins came out. Miranda came out with a "Batman Special Blueberry Blast" soda, the whole market was crawling with Batman toys.</li>
+	<li>Movies desensitise people. At the end of 2004, the Tsunami disaster was all over the news and the media. The situation was horrible and a lot of people in Bangalore sent over clothes, money and other supplies to the victims. I was speaking to a friend at the time who had a nonchanlant but superficially worried attitude - "Sad man.. so many people dead" and then went about his business. Later next year, a hindi movie named <em>Black</em> was released. It was quite acclaimed as far as I know. I spoke to this friend after he saw the movie and he told me that he cried watching it. The first thought that ran through my head was that since he's capable of shedding tears, they should have flowed for the tsunami victims and not for some fictional character in a movie.</li>
+</ol>

@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: Keywiz
+wordpress_id: 75
+wordpress_url: http://nibrahim.net.in/journal/?p=75
+---
+Think you know Emacs keybindings properly? Think again. <em>M-x keywiz</em> should convince you that you have a long way to go.
+
+This is in the emacs-goodies-el package on Ubuntu and Debian. I already found a nice new keystroke. M-( bound to insert-parentheses which encloses it's arguments in a pair of brackets.

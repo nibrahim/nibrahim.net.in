@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: On Sufism
+wordpress_id: 103
+wordpress_url: http://nibrahim.net.in/journal/?p=103
+---
+Imam Ghazzali on Sufism.<br />
+<blockquote>To be a Sufi means to abide continuously in God and to live at peace with men: whoever abides in God and deals rightly with men treating them with unfailing kindness, is a Sufi. </blockquote>
+<em>From <a href="http://feeds.feedburner.com/~r/LessonsOfTheDay/~3/167026194/lesson-of-day-935.html">Lesson of the day</a>.</em>

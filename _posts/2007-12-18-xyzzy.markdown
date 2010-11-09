@@ -1,0 +1,7 @@
+--- 
+layout: post
+title: xyzzy
+wordpress_id: 150
+wordpress_url: http://nibrahim.net.in/journal/?p=150
+---
+My first computer (1989 or so) came with 3 5.25" disks which contained the original DOS 3.3. They were provided inside a heavy cardboard envelope which used to lie on my desk. I was doing some cleaning last month and came across the envelope and it had <a href="http://en.wikipedia.org/wiki/Xyzzy">xyzzy</a> written on it while playing a "game". Ah... those were the <a href="http://en.wikipedia.org/wiki/Colossal_Cave_Adventure">days</a>.

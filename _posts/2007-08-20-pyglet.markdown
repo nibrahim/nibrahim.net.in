@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: Pyglet
+wordpress_id: 19
+wordpress_url: http://nibrahim.net.in/journal/?p=19
+---
+<a href="http://entitycrisis.blogspot.com/2007/08/check-out-pyglet.html">Entity Crisis: Check out Pyglet!</a>
+
+A cross platform windowing and multimedia library in Python

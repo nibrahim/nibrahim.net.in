@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: PyFlash
+wordpress_id: 3
+wordpress_url: http://nibrahim.net.in/journal/?p=3
+---
+<p>PyFlash is a flashcard program written in Python and uses PyGTK. It comes bundled with 2 sample flashcard files. One giving basic Arabic verbal conjugations and the other 3 simple english words and meanings. </p>
+<p>I've not tested it on windows but with a proper installation of Python and PyGTK, it should work fine.<br />
+PyGTK for windows may be downloaded at <a href="http://www.pcpm.ucl.ac.be/~gustin/win32_ports/pygtk.html">http://www.pcpm.ucl.ac.be/~gustin/win32_ports/pygtk.html</a>.<br />
+Perhaps one of the later versions will be more userfriendly in this regard. </p>
+<p>Python itself may be downloaded from <a href="http://python.org/2.4.2/">www.python.org</a>.</p>
+<p>Details at the <a href="../software/">software page</a>.<br />
+It also has a <a href="http://www.gnomefiles.org/app.php?soft_id=1268">page</a> at the gnomefiles website.
+</p>

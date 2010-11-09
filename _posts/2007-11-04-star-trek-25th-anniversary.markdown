@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: "Star Trek : 25th Anniversary"
+wordpress_id: 130
+wordpress_url: http://nibrahim.net.in/journal/?p=130
+---
+While I don't discuss whether Picard's commanding style is better or worse than Kirk's, I'm still at heart, a bit of a trekkie - one of few kids at school who considered the pointy eared Vulcan a role model.<br />
+The first ST game I played is a DOS version of the one called (unsurprisingly) <a href="http://en.wikipedia.org/wiki/Star_Trek_%28text_game%29">Star Trek </a>. It's similar to the text based "trek" that appears on most Gnu/Linux machines as part of the bsdgames package. It's a text based simulation of starship combat. Fun to play but limited. <br />
+The other one which I've played and enjoyed is <a href="http://en.wikipedia.org/wiki/Star_Trek:_25th_Anniversary_%28computer_game%29">Star Trek : 25th Anniversary </a>. It's basically an adventure game with some arcade sequences (spaceship battles) thrown in. The game consists of 5 "episodes" in which Kirk, Bones, Spock and a <a href="http://en.wikipedia.org/wiki/Redshirt_%28character%29">red shirt</a> beam to the scene of the adventure and have to solve a mystery (which stood out from most adventure games of the time where you controlled just one person). The episodes are interesting for their stories. The actual solutions however, are mostly limited to "use tricorder on object", "ask spock to look at object" etc. (the limitations of mouse driven interfaces... *sigh*). It's interesting to play if you're a Trek fan since the creators have taken some trouble to create a Trek like atmosphere in the game. Here are some screenshots.
+<a class="imagelink" href="http://nibrahim.net.in/journal/wp-content/uploads/2007/11/startrek_000.png" title="boldly go"><img id="image126" src="http://nibrahim.net.in/journal/wp-content/uploads/2007/11/startrek_000.thumbnail.png" alt="boldly go" /></a> - A scene from the intro<br />
+<a class="imagelink" href="http://nibrahim.net.in/journal/wp-content/uploads/2007/11/startrek_001.png" title="Enterprise bridge"><img id="image127" src="http://nibrahim.net.in/journal/wp-content/uploads/2007/11/startrek_001.thumbnail.png" alt="Enterprise bridge" /></a> - The enterprise bridge
+<a class="imagelink" href="http://nibrahim.net.in/journal/wp-content/uploads/2007/11/startrek_002.png" title="Aboard Ark 7"><img id="image128" src="http://nibrahim.net.in/journal/wp-content/uploads/2007/11/startrek_002.thumbnail.png" alt="Aboard Ark 7" /></a> - Aboard a derelict space station (the Ark 7).<br />
+<a class="imagelink" href="http://nibrahim.net.in/journal/wp-content/uploads/2007/11/startrek_003.png" title="Transporter"><img id="image129" src="http://nibrahim.net.in/journal/wp-content/uploads/2007/11/startrek_003.thumbnail.png" alt="Transporter" /></a> - The Enterprise transporter bay.
+
+A fun to play game if you're a Trek fan. It's available for download from <a href ="http://www.abandonia.com/games/100/download/StarTrek25thAnniversary.htm">Abandonia</a> and runs just fine inside dosbox.

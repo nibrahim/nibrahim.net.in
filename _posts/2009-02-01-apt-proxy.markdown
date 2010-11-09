@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: apt-proxy
+wordpress_id: 229
+wordpress_url: http://nibrahim.net.in/journal/?p=229
+---
+My first experience with an app written using the twisted framework and it's TERRIBLE. Can't use it reliably for anything. 
+
+This is not to say that twisted is bad (I've never really used it) but apt-proxy totally suXX0rZ. Stay away from it. 

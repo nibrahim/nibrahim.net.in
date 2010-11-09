@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: Cat burglary
+wordpress_id: 140
+wordpress_url: http://nibrahim.net.in/journal/?p=140
+---
+After watching a nice trailer of the upcoming game Assassin's creed one of whose notable features is the ability to use even the smallest bumps and niches of buildings as climbing aids, I decided to go out to buy some chilli powder which I needed to fix supper. I put the rice on stove so that it would be done by the time I got back and then went out. The game is very nicely made and and I thought to myself how cool it would be to be able to climb as smoothly as <a href="http://en.wikipedia.org/wiki/Assassin%27s_Creed">Altair</a>. Like they say, be careful what you wish for. You just might get it. 
+The main door locks itself automatically when closed and you need the key to open it. I forgot to take my keys and slammed the door shut. <b>Sigh</b>. <a href="http://www.emacswiki.org/cgi-bin/alex/2007-11-30_It%e2%80%99s_Over">Some people</a> are having better luck with their flats. 
+
+The situation now was that my pressure cooker was on the boil, I was shut outside my house with very little money in my pocket and no keys to get back in. I went over to the terrace and took a look at the wall next to my balcony and felt that with some Assassin's luck, I should be able to reach my balcony from my neighbours by climbing over the grill (on the second floor) in between them. I did just that and it wasn't that hard <b>*smirk*</b>. Once I got to my balcony, I cut open the mosquito netting of an open window with <a href="http://www.swissknifeshop.co.uk/victorinox_huntsman_lite.html">an excellent tool</a> I bought just today (and which was still in my pocket). I then borrowed a broom, a pole, a hook like piece of metal and a length of rope from my neighbour and fashioned something with which I could hook the keys and get them out. I then climbed back and got the door open. The whole episode left me with some scratches on my hand from the rusty mosquito net so I got a <a href="http://www.doctorndtv.com/faq/detailfaq.asp?id=7019">tetanus toxide</a> injection. 
+
+Verily, fact is far more stranger and definitely more interesting than fiction. Now I need to put this "skill" on my resume, get to the nearest Assassin's guild and get my <a href="http://www.xboxgazette.com/i/pic_assassinscreed_art_16.jpg">left ring</a> <a href="http://www.gamershoard.com/wp-content/uploads/2006/12/assassins-creed.jpg">finger sawn</a> off. 

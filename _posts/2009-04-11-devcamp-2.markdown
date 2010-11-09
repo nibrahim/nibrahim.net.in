@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: Devcamp 2
+wordpress_id: 238
+wordpress_url: http://nibrahim.net.in/journal/?p=238
+---
+The Devcamp sessions were fun. My talk went reasonably well. Using a CVS version of Emacs gave me some trouble with font settings but apart from that, it was fine.
+
+I particularly enjoyed the talk on CouchDb by Anand. 
