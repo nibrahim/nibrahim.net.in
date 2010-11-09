@@ -4,6 +4,16 @@ body {
        color: #333;
        }
 
+a { 
+    color: #00f;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+ }
+
+a:hover { 
+          border-bottom: 1px dashed #00f;
+ }
+
 #hd { 
       background-image: url("/images/headerbg.png");
       background-repeat: no-repeat;
@@ -29,6 +39,10 @@ body {
            padding-top: 40px;
            display:block;
            text-align: center;
+ }
+
+#hd h1 a:hover { 
+                 border:0;
  }
 
 #hd h3 { 
