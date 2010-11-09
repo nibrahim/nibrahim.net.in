@@ -24,7 +24,7 @@ body {
          }
 
 #hd h1 a { 
-           color: black;
+           color: #999;
            text-decoration: none;
            padding-top: 40px;
            display:block;
