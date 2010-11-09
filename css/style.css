@@ -91,12 +91,6 @@ ul.places li {
                line-height:2em;
  }
 
-div.resume { 
-             text-align: right;
-             border: 1px solid black;
-             float: right;
-             
- }
 
 #home { 
         background-image: url("/images/brokenline-v.png");
