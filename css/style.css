@@ -50,6 +50,12 @@ ul.posts li {
               line-height: 25pt;
  }
 
+ul.contact li { 
+                margin-left: 2em;
+                list-style-type: disc;
+                line-height: 1em;
+ }
+
 h2 { 
      margin: 5pt 0;
      text-align: left;
@@ -100,9 +106,6 @@ div.footer {
              }
 
 div.credits { 
-              background-color: #fafafa;
-              border-top: 3px double #aaa;
-              border-bottom: 1px solid #aaa;
               padding: 3pt 0;
               margin:0;
               font-size: 8pt;
