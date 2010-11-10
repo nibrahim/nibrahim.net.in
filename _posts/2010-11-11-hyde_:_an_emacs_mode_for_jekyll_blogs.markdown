@@ -4,7 +4,7 @@ title: "Hyde : An Emacs mode for Jekyll blogs"
 ---
 
 I've been working on a simple mode to manage my blog entries using
-Emacs and [Jekyll](http://jekyllrb.org). 
+Emacs and [Jekyll](http://jekyllrb.com). 
 
 The mode is available at [https://github.com/nibrahim/Hyde](https://github.com/nibrahim/Hyde).
 
