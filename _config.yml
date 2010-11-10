@@ -1,2 +1,4 @@
 pygments: true
 lsi: true
+exclude: [.hyde]
+paginate: 2
