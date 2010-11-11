@@ -155,6 +155,9 @@ div.postcontent ul {
 div.postcontent ul li { 
            list-style-type: disc;
  }
+div.postcontent ul li ul li { 
+           list-style-type: circle;
+ }
 
 div.postcontent h2 { 
                      font-size:12pt;
@@ -164,6 +167,9 @@ div.postcontent h2 {
                      margin-top: 3pt;
  }
 
+div.postcontent code {  
+                       background-color: #F7F7F7;
+}
 
 div.postcontent em { 
               font-style: italic;
