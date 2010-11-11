@@ -78,7 +78,9 @@ The keys you can use at this time are
   deployment).
 * `j` : Run jekyll and create the new version of the site
 * `d` : Deploy the site.
-* `g` : Refresh posts (useful if you've done something by hand earlier)
+* `g` : Refresh posts (useful if you've done something by hand
+  earlier)
+* `q` : Quit hyde.  
 * `RET` : Open the current post for editing.
 
 The markdown mode in which the buffers open up for editing is slightly
