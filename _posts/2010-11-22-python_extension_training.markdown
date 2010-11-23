@@ -3,7 +3,7 @@ layout: post
 title: "Python extension training"
 ---
 
-I'm conducting my ["Extending Python using C"]((/trainings/python-extensions.html) training on 8 and 9
+I'm conducting my ["Extending Python using C"](/trainings/python-extensions.html) training on 8 and 9
 January 2011. 
 
 The training will be conducted at Regus Business Centre, Level 9,
