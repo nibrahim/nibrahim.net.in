@@ -3,8 +3,11 @@ layout: post
 title: "Python extension training"
 ---
 
-I'm conducting my "Extending Python using C" training on 11 and 12
-December 2010 at Regis, Ulsoor.
+I'm conducting my ["Extending Python using C"]((/trainings/python-extensions.html) training on 8 and 9
+January 2011. 
+
+The training will be conducted at Regus Business Centre, Level 9,
+Raheja Towers, 26-27 Mahatma Gandhi Road, Bangalore - 560001
 
 You can view details of the course at
 [the info page](/trainings/python-extensions.html). To register for the event, please click on the link below
