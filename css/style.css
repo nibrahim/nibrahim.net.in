@@ -59,6 +59,12 @@ a#atom:hover {
                  border:0;
  }
 
+#hd h1 span.subtitle { 
+                      font-size: 80%;
+                      border-top: 1px solid #eee;
+                      
+ }
+
 #hd h3 { 
          display:block;
          
@@ -198,6 +204,7 @@ div.postcontent ol li {
 div.postcontent ol li p { 
                         margin-left: 5%;                        
  }
+
 
 
 
