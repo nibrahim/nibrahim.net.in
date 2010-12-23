@@ -24,7 +24,7 @@ Earlier this month, I got a job offer from the
 [Open Library](http://openlibrary.org) project (a sub project of the
 Internet Archive) via. [Anand](http://anandology.com/). I accepted it
 and starting Jan, I'll be working for them remotely. Lots of
-challenges, all code is free software, decent pay, and work that has a
+challenges, great people, all code is free software, decent pay, and work that has a
 positive social impact - What more can one ask for?
 
 We'll probably be setting up a small office of sorts somewhere in
