@@ -74,7 +74,7 @@ The keys you can use at this time are
 
 * `n` : Create a new post (it will be a draft)
 * `c` : Commit the current post
-* `p` : Push all pending commits (this is only a VC push. Not
+* `P` : Push all pending commits (this is only a VC push. Not
   deployment).
 * `j` : Run jekyll and create the new version of the site
 * `d` : Deploy the site.
