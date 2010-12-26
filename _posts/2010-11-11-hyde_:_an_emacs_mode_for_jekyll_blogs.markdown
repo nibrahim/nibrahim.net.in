@@ -72,7 +72,7 @@ accordingly
 
 The keys you can use at this time are
 
-* `n` : Create a new post
+* `n` : Create a new post (it will be a draft)
 * `c` : Commit the current post
 * `p` : Push all pending commits (this is only a VC push. Not
   deployment).
@@ -80,6 +80,7 @@ The keys you can use at this time are
 * `d` : Deploy the site.
 * `g` : Refresh posts (useful if you've done something by hand
   earlier)
+* `p` : Promote a post from a draft to a a published post
 * `q` : Quit hyde.  
 * `RET` : Open the current post for editing.
 
