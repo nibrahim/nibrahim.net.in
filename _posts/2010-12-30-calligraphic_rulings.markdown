@@ -44,6 +44,7 @@ which takes a bunch of parameters and creates an A4 PDF with the
 rulings. The only "documentation" right now is the help message which
 is pretty sufficient really. 
 
+{% highlight text %}
     Usage: ruling.py [options] output_file
     
     Options:
@@ -64,6 +65,7 @@ is pretty sufficient really.
                             to draw lines on the page (for pen angle, serifs etc.)
       -t TITLE, --title=TITLE
                             A title for this ruling (usually the font name)
+{% endhighlight %}
 
 Invoking it like so `python ruling.py -g2 -p3,4,3 -n2 -r25  -a30
 -t"Foundational Hand" foundational_ruling_sheet.pdf` produces
