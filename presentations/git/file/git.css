@@ -1,0 +1,43 @@
+html { 
+       background-color: #fff;
+       }
+
+body {
+        background-color: #FFF9F2;
+        border: 1px solid #999;
+        margin: 12pt;
+        -webkit-border-radius: 10px;
+        -webkit-box-shadow: 0 0 8px #999999;
+       }
+
+.slide { 
+         background-color: #FFF9F2;
+         border: 0;
+         }
+
+code { 
+       font-style: italic;
+       }
+h1 {
+     border-bottom: 3px double #aaa;
+     font-family: Times;
+     }
+
+h3 {
+     font-style: italic;
+     font-family: Times;
+     }
+
+
+#footer {
+          font-size: 8pt;
+          font-style: italic;
+          text-align: right;
+          background-color: transparent;
+          color: #aaa;
+          padding-right: 15pt;
+          }
+
+code.result {
+              font-size: 0.7em;
+              }

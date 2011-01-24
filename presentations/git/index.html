@@ -1,0 +1,680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Gitting you to commit</title>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/git.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+    setupPreso(false, './');
+  });
+  </script>
+</head>
+
+<body>
+
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">&larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">z</td><td>toggle help (this)</td></tr>
+  </table>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="toss"><div class="content" ref="introduction/01_introduction/1">
+<h1>Gitting you to commit</h1>
+
+<h3>A practical introduction to git</h3></div>
+</div><div class="slide" data-transition="toss"><div class="content center" ref="introduction/01_introduction/2">
+<h1>Version control systems</h1>
+
+<p><img src="./file/introduction/types.png" width="434" height="142" alt="types"/></p></div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="introduction/01_introduction/3">
+<h1>Distributed version control</h1>
+
+<ul>
+<li>Version control without a central server.</li>
+<li>Each <em>checkout</em> is a full first class reposistory.</li>
+<li>Most operations (commit, log, diff) are local.</li>
+<li>Just a few non-local commands to publish your changes.</li>
+<li>e.g. Bzr, Git, Mercurial etc.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="introduction/01_introduction/4">
+<h1>Git</h1>
+
+<ul>
+<li>Bitkeeper replacement</li>
+<li>Content addressable file system</li>
+<li>Cryptographically signed commits (SHA1)</li>
+<li>Heavy branching/merging support</li>
+<li>UNIXy (plumbing + porcelain)</li>
+<li>Highly distributed workflows</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="introduction/02_simple_workflow/1">
+<h1>Getting set up</h1>
+
+<ul>
+<li><code>sudo apt-get install git-core</code> on Ubuntu/Debian</li>
+<li>Source : <a href="http://kernel.org/pub/software/scm/git/git-1.7.3.5.tar.bz2"><code>http://kernel.org/pub/software/scm/git/git-1.7.3.5.tar.bz2</code></a>.</li>
+<li>Set things in your config file <code>/etc/gitconfig</code>, <code>~/.gitconfig</code>,
+<code>.git/config</code>.</li>
+<li/>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content commandline incremental" ref="introduction/02_simple_workflow/2">
+<h1>Configuration</h1>
+
+<pre><code><code class="command">$ git config --global user.name "Noufal Ibrahim"</code><code class="result">
+</code><code class="command">$ git config --global user.email noufal@nibrahim.net.in</code><code class="result">
+</code></code></pre></div>
+</div><div class="slide" data-transition="toss"><div class="content commandline incremental" ref="introduction/02_simple_workflow/3">
+<h1>Your first repository</h1>
+
+<pre><code><code class="command">$ git init # Initialise a repository</code><code class="result">
+Initialized empty Git repository in /tmp/foo/.git/
+</code><code class="command">$ echo "This is a sample repository" &gt; README</code><code class="result">
+</code><code class="command">$ git status # Show status of files</code><code class="result">
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add &lt;file&gt;..." to include in what will be committed)
+#
+#   README
+nothing added to commit but untracked files present (use "git add" to track)
+</code></code></pre></div>
+</div><div class="slide" data-transition="toss"><div class="content commandline incremental" ref="introduction/02_simple_workflow/4">
+<h1>Committing a file</h1>
+
+<pre><code><code class="command">$ git add README</code><code class="result">
+</code><code class="command">$ git status</code><code class="result">
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached &lt;file&gt;..." to unstage)
+#
+#   new file:   README
+#
+</code><code class="command">$ git commit -m "Initial commit"</code><code class="result">
+[master (root-commit) 199455a] Initial commit
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+ create mode 100644 README
+</code></code></pre></div>
+</div><div class="slide" data-transition="toss"><div class="content commandline incremental" ref="introduction/02_simple_workflow/5">
+<h1>Viewing history</h1>
+
+<pre><code><code class="command">$ git log # Full logs</code><code class="result">
+commit 199455a2525a0a2fd712a7fe7e97c1e4efe87e18
+Author: Noufal Ibrahim &lt;noufal@nibrahim.net.in&gt;
+Date:   Tue Jan 18 00:50:47 2011 +0530
+
+Initial commit
+</code><code class="command">$ git log --pretty=oneline # Formatting</code><code class="result">
+199455a2525a0a2fd712a7fe7e97c1e4efe87e18 Initial commit
+</code></code></pre></div>
+</div><div class="slide" data-transition="toss"><div class="content commandline incremental" ref="introduction/02_simple_workflow/6">
+<h1>Making changes</h1>
+
+<pre><code><code class="command">$ echo "\nOne more line\n"&gt;&gt; README</code><code class="result">
+</code><code class="command">$ git diff</code><code class="result">
+diff --git a/README b/README
+index 0ece930..c43f21d 100644
+--- a/README
++++ b/README
+@@ -1 +1,4 @@
+ This is a sample repository
++
++One more line
++
+</code><code class="command">$ git status</code><code class="result">
+# On branch master
+# Changed but not updated:
+#   (use "git add &lt;file&gt;..." to update what will be committed)
+#   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+#
+#   modified:   README
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+</code><code class="command">$ git add README</code><code class="result">
+</code><code class="command">$ git commit -m "Added one more line"</code><code class="result">
+[master 0d47197] Added one more line
+1 files changed, 3 insertions(+), 0 deletions(-)
+</code></code></pre></div>
+</div><div class="slide" data-transition="toss"><div class="content center" ref="introduction/03_stages/1">
+<h1>Workflow stages</h1>
+
+<p><img src="./file/introduction/stages.png" width="702" height="173" alt="stages"/></p></div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="introduction/03_stages/2">
+<h1>The working copy</h1>
+
+<ul>
+<li>Your files which you actually edit.</li>
+<li>Files are moved into the index/staging area using <code>git add</code>.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="introduction/03_stages/3">
+<h1>The staging area</h1>
+
+<ul>
+<li>You can fine tune your patch before committing it.</li>
+<li><code>git add -i</code> allows you to add pieces of changes.</li>
+<li><code>git diff</code> shows only unstaged diffs.</li>
+<li><code>git diff --cached</code> shows staged diffs.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="introduction/03_stages/4">
+<h1>The repository</h1>
+
+<ul>
+<li>This is your database of commits, branches, tags etc.</li>
+<li>We'll cover it in detail in a later slide.</li>
+<li>All commands operate on this.</li>
+<li>Present inside the <code>.git</code> directory (or <code>GIT_DIR</code>).</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="introduction/03_stages/5">
+<h1>The remote(s)</h1>
+
+<ul>
+<li>Represent other repositories.</li>
+<li>You can send sync with these.</li>
+<li>Used to publish/collaborate.</li>
+<li>e.g. The copy of your repository on github.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content center" ref="architecture/04_repository/1">
+<h1>Snapshot storage</h1>
+
+<p><img src="./file/architecture/delta-storage.png" width="449" height="291" alt="delta-storage"/>
+Image from : <a href="http://www.slideshare.net/chacon/getting-git">http://www.slideshare.net/chacon/getting-git</a></p></div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="architecture/04_repository/2">
+<h1>Objects in git</h1>
+
+<ul>
+<li>Each object is a identified by a 40 characters SHA1 hash.</li>
+<li>Every objects has a <em>type</em>, <em>size</em> and <em>content</em>.</li>
+<li>4 types of objects - <em>Blob</em>, <em>Tree</em>, <em>Commit</em>, <em>Tag</em>.</li>
+<li>They can be examined using <code>git cat-file</code>.</li>
+<li>Reside inside the <code>.git/objects/</code> directory.</li>
+<li>Stored as <code>objects/xx/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="architecture/04_repository/3">
+<h1>Blobs</h1>
+
+<p><img src="./file/architecture/blob.png" width="156" height="167" alt="Blob"/></p>
+
+<ul>
+<li>Blobs are data stores</li>
+<li>They are the <em>files</em> of the git filesystem.</li>
+<li>Hash depends <em>only</em> on content.</li>
+<li>Two files with the same content will have just one blob.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="architecture/04_repository/4">
+<h1>Trees</h1>
+
+<p><img src="./file/architecture/tree.png" width="156" height="142" alt="Tree"/></p>
+
+<ul>
+<li>Trees are groups of pointers to other trees or blobs.</li>
+<li>Similar to <em>directories</em> of the git filesystem.</li>
+<li><code>git ls-tree</code> will give you details.</li>
+<li>Two trees will be identical only if their entire contents are.</li>
+<li>If two huge directories are completely the same, git will know in an instant.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="architecture/04_repository/5">
+<h1>Commits</h1>
+
+<p><img src="./file/architecture/commit.png" width="156" height="167" alt="Commit"/></p>
+
+<ul>
+<li>Point in the history of the project with info on how we got here.</li>
+<li><code>Tree</code> (pointer to files)</li>
+<li>one (regular), more than one (merge) or zero (root) <code>Parent</code>s</li>
+<li><code>Author</code> (Who made it + date)</li>
+<li><code>Committer</code> (Who put it into this DAG + date)</li>
+<li><code>Comment</code> describing change</li>
+<li>Diffs obtained by comparing trees</li>
+<li>Usually generated using <code>git commit</code> (parent is HEAD, tree is index).</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="architecture/05_examination/1">
+<h1>References in the DAG</h1>
+
+<ul>
+<li>Git maintains a number of <code>references</code></li>
+<li>Files which contain SHA1 identifiers of commits.</li>
+<li>Used to maintain branches, tags etc.</li>
+<li>Symbolic refs contain names of real refs.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content center" ref="architecture/05_examination/2">
+<h1>Digging in</h1>
+
+<h3>Practical sessions</h3></div>
+</div><div class="slide" data-transition="fade"><div class="content smbullets incremental" ref="advanced/06_branching/1">
+<h1>Branches</h1>
+
+<ul>
+<li>Branches are just another reference in your tree.</li>
+<li>Created using the <code>git branch</code> command.</li>
+<li><code>git branch test</code> creates a branch called <code>test</code></li>
+<li><code>git checkout test</code> switches you to that branch</li>
+<li>i.e. Changes your <code>HEAD</code> to refer to <code>test</code>.</li>
+<li><strong>Let's see what happens</strong></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content full-page incremental" ref="advanced/06_branching/2">
+<h1>The DAG right now</h1>
+
+<p><img src="./file/advanced/branching0.png" width="476" height="231" alt="The DAG"/></p></div>
+</div><div class="slide" data-transition="toss"><div class="content full-page incremental" ref="advanced/06_branching/3">
+<h1>Creating/switching branches</h1>
+
+<p><img src="./file/advanced/branching1.png" width="527" height="219" alt="Creating/switching branches"/></p></div>
+</div><div class="slide" data-transition="toss"><div class="content full-page incremental" ref="advanced/06_branching/4">
+<h1>The docs branch</h1>
+
+<p><img src="./file/advanced/branching2.png" width="310" height="186" alt="Some more commits on the docs branch"/></p></div>
+</div><div class="slide" data-transition="toss"><div class="content full-page incremental" ref="advanced/06_branching/5">
+<h1>Switch back to master</h1>
+
+<p><img src="./file/advanced/branching3.png" width="654" height="219" alt="Switch back to master"/></p></div>
+</div><div class="slide" data-transition="toss"><div class="content full-page incremental" ref="advanced/06_branching/6">
+<h1>Merge in docs</h1>
+
+<p><img src="./file/advanced/branching4.png" width="844" height="167" alt="Merge docs branch"/></p></div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/06_branching/7">
+<h1>Fast forward merges</h1>
+
+<ul>
+<li>Simple merges when one branch(<em>A</em>) is behind the other(<em>B</em>).</li>
+<li>Simple change <em>A</em> to point to <em>B</em>.</li>
+<li>Super fast, super easy</li>
+<li><strong>Let's go back to the pre merge scenario</strong></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content full-page incremental" ref="advanced/06_branching/8">
+<h1>Merge in docs after some commits</h1>
+
+<p><img src="./file/advanced/branching5.png" width="997" height="280" alt="Merge docs branch"/></p>
+
+<ul>
+<li>Now, <code>docs</code> can be fast forwarded to <code>master</code>.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content full-page incremental" ref="advanced/06_branching/9">
+<h1>Merge commits</h1>
+
+<ul>
+<li><em>merge commits</em> are commits with more than one parent.</li>
+<li>They are created when you merge and fast-forward is not possible.</li>
+<li><code>git branch --merged</code> shows all branches contained by the current
+one.</li>
+<li><code>git branch --no-merged</code> shows all branches <em>not</em> contained by the
+current one.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/06_branching/10">
+<h1>Branching in real life 1</h1>
+
+<ul>
+<li>Branches are just references to positions in the DAG.</li>
+<li>You can <code>reset</code> to before the merge to throw it away.</li>
+<li>Sometimes, you have to manually merge files.</li>
+<li>Fix them and do a <code>git add</code> to mark it as done.</li>
+<li>Then commit. A new <em>merge commit</em> is created.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/06_branching/11">
+<h1>Branching in real life 2</h1>
+
+<ul>
+<li>Branches can be created from any commit.</li>
+<li><code>git branch experimental 53222122668c23e704a6baf8059f871343c28d79</code></li>
+<li>Will create a branch starting from `53222122668c23e704a6baf8059f871343c28d79</li>
+<li>You can then do some development there.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/07_rebase/1">
+<h1>Rebasing</h1>
+
+<ul>
+<li>An "alternative" to merging.</li>
+<li>Rewrites history to look like branching never happened.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="fade"><div class="content full-page incremental" ref="advanced/07_rebase/2">
+<h1>Rebase instead of merge</h1>
+
+<p><img src="./file/advanced/rebase.png" width="1089" height="281" alt="Rebase"/></p></div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/07_rebase/3">
+<h1>Rebase</h1>
+
+<ul>
+<li>Commits on the current branch are removed.</li>
+<li>and reapplied on the requested branch.</li>
+<li>Conflicts might happen which need to be resolved</li>
+<li>and then the rebase continued using <code>git rebase --continue</code></li>
+<li><code>6</code> and <code>7</code> are dangling commits which have to be garbage collected.</li>
+<li><code>git rebase --interactive</code> is lots of fun.</li>
+<li><code>git rebase --abort</code> is to stop the rebase process.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/08_tagging/1">
+<h1>Tagging</h1>
+
+<ul>
+<li>Useful for marking certain points in your history.</li>
+<li>Think of them as bookmarks.</li>
+<li>e.g. <code>ver1.0</code>, <code>ver2.0</code> etc.</li>
+<li>A tag is similar to an immovable branch.</li>
+<li>Two kinds. We'll see them now.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/08_tagging/2">
+<h1>Lightweight tags</h1>
+
+<ul>
+<li>These are simply <em>refs</em> which point to a specific commit.</li>
+<li>You create them using <code>git tag</code>.</li>
+<li>You can see them inside <code>.git/refs/tags/</code></li>
+<li>You can see them using <code>git tag</code></li>
+<li>Not recommended</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/08_tagging/3">
+<h1>Annotated tags</h1>
+
+<ul>
+<li>These are <code>objects</code> which can be signed.</li>
+<li>Using <code>git tag</code> with either <code>-a</code>, <code>-s</code> or <code>-u</code>.</li>
+<li>The ref in <code>.git/refs/tags</code> will point to the tag object (not the commit).</li>
+<li/>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/09_stashing">
+<h1>Stashing</h1>
+
+<ul>
+<li>Useful to keep aside work to perform something else.</li>
+<li>Stashes all unsaved commits and cleans up working tree.</li>
+<li>Stashing done using <code>git stash</code></li>
+<li><code>git stash list</code> shows list of all stashes.</li>
+<li>Applying using <code>git apply</code> and pop using <code>git pop</code>.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/10_remotes/1">
+<h1>Remotes</h1>
+
+<ul>
+<li>A <code>remote</code> is a repository stored somewhere other than your local machine.</li>
+<li>The URL of the remote is stored in your config file.</li>
+<li>The position of refs on this is stored in <code>.git/refs/remote/&lt;remotename&gt;/</code></li>
+<li>Manipulated and queried using <code>git remote</code>.</li>
+<li>Most remote operations require the network (non-local).</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/10_remotes/2">
+<h1>Remote locations</h1>
+
+<ul>
+<li><code>git add remote upstream git@github.com:nibrahim/git-presentation.git</code></li>
+<li>Adds a github repository as <code>upstream</code>.</li>
+<li>Can be viewed using <code>git remote</code> (with <code>-v</code> for locations).</li>
+<li>Deleted using <code>git remote rm</code></li>
+<li>You have a cached copy of all refs locally.</li>
+<li><code>git update</code> fetches latest information from the remote</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/10_remotes/3">
+<h1>Tracking branches</h1>
+
+<ul>
+<li>These are branches that are "connected" to ones on the remote.</li>
+<li>Created using <code>git branch --track local_name remote_name/remote_branch_name</code></li>
+<li>Now, <code>local_name</code> will follow <code>remote_branch_name</code> on <code>remote_name</code>.</li>
+<li>Updates over there can be <code>fetch</code>ed here</li>
+<li>Updates over here can be <code>push</code>ed there.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/10_remotes/4">
+<h1>Fetching</h1>
+
+<ul>
+<li><code>git fetch &lt;remote&gt;</code> pulls in commits from <code>&lt;remote&gt;</code>.</li>
+<li>After fetching, you can merge it with <code>git merge</code>.</li>
+<li><code>git pull</code> = <code>git fetch</code> + <code>git merge</code>.</li>
+<li>Full form is <code>git pull &lt;remote&gt; &lt;ref&gt;</code></li>
+<li>Pull in changes from <code>&lt;remote&gt;/&lt;ref&gt;</code> into current branch here.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/10_remotes/5">
+<h1>Pushing</h1>
+
+<ul>
+<li><code>git push &lt;remote&gt;</code> sends local commits to <code>&lt;remote&gt;</code>.</li>
+<li>Full form is <code>git push &lt;remote&gt; &lt;ref&gt;</code></li>
+<li>Send pending changes to <code>&lt;remote&gt;/&lt;ref&gt;</code>.</li>
+<li><code>&lt;ref&gt;</code> is <code>srcref:destref</code>.</li>
+<li>It indicates what from here is pushed to what over there.</li>
+<li><code>git push &lt;remote&gt; :&lt;branch&gt;</code> will delete <code>&lt;branch&gt;</code> from the remote (empty src).</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/10_remotes/6">
+<h1>Remote miscellanea</h1>
+
+<ul>
+<li>Pushes don't push tags. You have to say <code>--tag</code>.</li>
+<li>Pushes are useful to collaborate work.</li>
+<li>e.g. I clone from a repo but want to push to another so as to get my work reviewed</li>
+<li>You can keep multiple remotes from various "lieutenants" and just do merging.</li>
+<li>Commits are local but pushes/pulls are not.</li>
+<li>You need network access to do this.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/11_references">
+<h1>References</h1>
+
+<ul>
+<li>References are full names to "pointers" in the DAG.</li>
+<li>Local branch <code>test</code> is actually <code>refs/heads/test</code>.</li>
+<li>Tag <code>v1.0</code> is actually <code>refs/tags/v1.0</code>.</li>
+<li>Remote branch <code>origin/master</code> is actually <code>refs/remotes/origin/master</code>.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/12_treeish/1">
+<h1>Treeish</h1>
+
+<ul>
+<li>A <code>treeish</code> is a way of referring to a commit.</li>
+<li>These slides use some of my personal repositories for examples.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/12_treeish/2">
+<h1>SHA</h1>
+
+<ul>
+<li>You can refer to a commit by it's SHA</li>
+<li>e.g. <code>53222122668c23e704a6baf8059f871343c28d79</code></li>
+<li>You can also use a partial SHA (i.e. <code>53222</code>)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/12_treeish/3">
+<h1>Branch/remote/tag</h1>
+
+<ul>
+<li>You can also use the name of a branch (pointer to a commit).</li>
+<li>or a tag (pointer to a commit).</li>
+<li>or a remote (pointer to a commit).</li>
+<li>Full or partial refs allowed</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/12_treeish/4">
+<h1>Date spec</h1>
+
+<ul>
+<li><code>master@{yesterday}</code> means where the <code>master</code> was yesterday.</li>
+<li>Might be different on different clones.</li>
+<li>This is a local operation.</li>
+<li><em>example</em> : <code>git log "master@{6 months ago}"</code></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/12_treeish/5">
+<h1>Ordinal spec</h1>
+
+<ul>
+<li>We're getting dirtier now.</li>
+<li><code>master@{5}</code> points to the Nth <em>previous value</em> of <code>master</code>.</li>
+<li><em>example</em> : <code>git log</code> and then <code>git log "master@{5}"</code>.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/12_treeish/6">
+<h1>Caret parent</h1>
+
+<ul>
+<li><code>foo^2</code> 2nd parent of merge commit <code>foo</code>.</li>
+<li><em>example</em> : Use merging demonstration sandbox and analyse the merge commit.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/12_treeish/7">
+<h1>~ spec</h1>
+
+<ul>
+<li><code>foo~2</code> gives us the 2nd grandparent of a <code>foo</code>.</li>
+<li><code>foo~2</code> is the same as <code>foo^^</code> (first parent of first parent of foo).</li>
+<li><em>example</em> : <code>git log "master~60^2^"</code> (on notes repository)</li>
+<li>First parent of the second parent of the 60th grandparent of foo. :)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/12_treeish/8">
+<h1>Tree pointer</h1>
+
+<ul>
+<li>Adding <code>^{tree}</code> to a commit fetches the tree associated with that commit.</li>
+<li><em>example</em> : <code>git cat-file -p "master^{tree}"</code></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/12_treeish/9">
+<h1>Blob spec</h1>
+
+<ul>
+<li>Adding <code>:path/to/file</code> to the end of a ref returns the SHA of the blob for that file.</li>
+<li><em>example</em> : <code>git cat-file -p "master^{tree}:.gitignore"</code></li>
+<li>Will return the contents of <code>.gitignore</code> as on <code>master</code>.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/12_treeish/10">
+<h1>Range specifications</h1>
+
+<ul>
+<li><code>ref1...ref2</code> gives you commits between these two refs.</li>
+<li><em>example</em> : <code>git log test...master</code></li>
+<li>Shows logs from in between test branch and master branch.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/13_thingsleftunsaid/1">
+<h1>Interesting leftovers</h1>
+
+<ul>
+<li>These slides cover show demos of interesting features.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/13_thingsleftunsaid/2">
+<h1>Bisect</h1>
+
+<ul>
+<li>Very useful to locate bad commits</li>
+<li>You give git a <code>bad</code>, a <code>good</code> and a <code>test</code></li>
+<li>Then ask it to find where things got messed up.</li>
+<li><em>Demo</em></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/13_thingsleftunsaid/3">
+<h1>Interactive adds</h1>
+
+<ul>
+<li>You can stage "parts" of files</li>
+<li>Useful to make fine grained commits.</li>
+<li><em>Demo</em></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content smbullets incremental" ref="advanced/13_thingsleftunsaid/4">
+<h1>Interactive rebase</h1>
+
+<ul>
+<li>You can squash, drop or rewrite commits</li>
+<li><em>Demo</em></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="toss"><div class="content bullets" ref="advanced/13_thingsleftunsaid/5">
+<h1>References</h1>
+
+<ul>
+<li>Pro Git book : <a href="http://progit.org/">http://progit.org/</a></li>
+<li>Git commuity book : <a href="http://book.git-scm.com/">http://book.git-scm.com/</a></li>
+<li>Git reference : <a href="http://gitref.org/">http://gitref.org/</a></li>
+<li>Advocacy (why git is better than X) : <a href="http://whygitisbetterthanx.com/">http://whygitisbetterthanx.com/</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center transision=fade" ref="advanced/13_thingsleftunsaid/6">
+<h1>Thank you</h1>
+
+<h3>Questions?</h3></div>
+</div>
+</div>
+
+</body>
+</html>
