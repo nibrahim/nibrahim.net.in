@@ -12,7 +12,7 @@ The course will probably be held on Sunday, 6th February 2011 but the
 reliable source of information. 
 
 The details of the course including slides are available at the
-[training page](/presentations/git/index.html).
+[training page](/trainings/git.html).
 
 
 
