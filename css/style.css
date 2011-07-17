@@ -2,6 +2,7 @@ body {
        background-color: #fff;
        font-size: 10pt;
        color: #333;
+       font-family: arial, san-serif; 
        }
 
 a { 
@@ -196,9 +197,8 @@ div.postcontent code {
 
 
 div.postcontent ol li { 
-                        list-style-type: lower-roman;
-                        text-indent: 2%;
-
+                        list-style-type: decimal;
+                        margin-left: 10%;
  }
 
 div.postcontent ol li p { 
