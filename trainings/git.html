@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-<h2 class="sectiontitle">A practical introduction to git</h2>
+<h2 class="sectiontitle">Version control using Git</h2>
 <div class="postcontent">
 
 <h2>Introduction</h2>
@@ -18,8 +18,10 @@ beneath the hood so that they're comfortable using the system.
 </p>
 <p>
 The course dives into daily use and gets more and more advanced as it
-goes on.
+goes on. We will cover basic usage, architecture, the branching model
+and some workflow concepts.
 </p>
+
 
 <h2>Course content</h2>
 <p>
@@ -51,13 +53,13 @@ An outline of the contents follows
   <li> References </li>
 </ul>
 </li>
-<li> Branching
+<li> Branches in git
 <ul>
-  <li> Creating/switching branches</li>
-  <li> Merging (fast forward and merge commits)</li>
+  <li> Branching</li>
+  <li> Merging</li>
+  <li> Rebasing</li>
 </ul>
 </li>
-<li> Rebasing</li>
 <li> Tagging </li>
 <li> Stashing </li>
 <li> Remotes 
@@ -69,19 +71,16 @@ An outline of the contents follows
 </li>
 <li> References </li>
 <li> Treeish's </li>
+<li> Submodules </li>
+<li> Repository hooks</li>
 <li> Useful tools
 <ul>
   <li> Bisect </li>
   <li> Interactive add and rebase </li>
 </ul>
 </li>
+<li>Suggested workflows</li>
 </ul>
-</p>
-
-<h2>Course schedule</h2>
-<p>
-The course will be a two day event. The training will run from 930 to
-1730 on both days. 
 </p>
 
 <h2>Prerequisites</h2>
@@ -94,6 +93,7 @@ UNIX tradition.
 The laptop should have the following software installed on it.
 <ul>
   <li> <a href="http://git-scm.com/">Git</a> itself </li>
+  <li> <a href="http://code.activestate.com/recipes/577572-display-a-git-repository/">This</a> script will be used to inspect the repository so it would be useful if people had ruby, <a href="http://grit.rubyforge.org/">grit</a> and <a href="http://graphviz.org/">graphviz</a> installed on their machines. This is not compulsory though.</li>
 </ul>
 Detailed setup instructions will be posted here soon.
 </p>
@@ -104,30 +104,45 @@ if the participants used the same.
 <p> 
 Registered participants can contact me before the training if they
 need help with installation and setup so that we don't waste time at
-the venue.
+the venue. My email address is <code>noufal at nibrahim dot net dot in</code>.
 </p>
 <p>
 Participants are expected to be knowledgeable about the general ideas
-of version control. This is not a software engineering 101 course. 
+of version control. Please contact me before the course if there are
+things you want clarified about the pre requisites.
 </p>
 
-
-<h2>Course materials</h2>
+<h2>Venue and timing</h2>
 <p>
-All participants will get a spiral bound copy of the course notes. 
-
-The course slides are available <a
-href="/presentations/git/index.html">over here</a>.
+The training will take place at <br/>
 </p>
-
-<h2>Hints, allegations and things left unsaid</h2>
+<p>
+Level  1<br/> Tower B<br/> The Millenia<br/> 1 & 2 Murphy Road<br/> Ulsoor<br/> Bangalore
+</p>
+<p>
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Regus+Business+Centre,+Bhaskaran+Road,+Ulsoor,+Bangalore,+Karnataka,+India&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=40.59616,78.837891&amp;vpsrc=0&amp;ie=UTF8&amp;hq=Regus+Business+Centre,&amp;hnear=Bhaskaran+Rd,+Halasuru,+Bengaluru,+Karnataka,+India&amp;ll=12.982025,77.624588&amp;spn=0.010387,0.009641&amp;t=m&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Regus+Business+Centre,+Bhaskaran+Road,+Ulsoor,+Bangalore,+Karnataka,+India&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=40.59616,78.837891&amp;vpsrc=0&amp;ie=UTF8&amp;hq=Regus+Business+Centre,&amp;hnear=Bhaskaran+Rd,+Halasuru,+Bengaluru,+Karnataka,+India&amp;ll=12.982025,77.624588&amp;spn=0.010387,0.009641&amp;t=m" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</p>
+<p>
+Lunch and tea will be provided at the venue. Two wheeler parking should be available at the building since it's a weekend.
+</p>
+<p>
+The training will take place on the 22nd and 23rd of October 2011. It will last from 10:00 am to 5:30 pm on both days. 
+</p>
 <p>
 Lunch and tea will be provided to participants as part of the
-course. Internet and power will also be provided. You will have to
-arrange parking for yourself. You will also have to bring your own
-laptop to the training.
+course. You will have to arrange parking for yourself. Since it's on a weekeYou will also
+have to bring your own laptop to the training. 
+</p>
+<p>
+There will be <em>no</em> internet at the venue so please make sure that you have everything you need before you come. There will be a local network so that the participants can share code and work with each others repositories.
 </p>
 
+<h2>Audience size and pricing</h2>
+<p>
+The price of the course is 5500 INR per head. The maximum class size is 18 so please book your tickets as soon as possible. Please go to <a href="http://git-training.doattend.com/">http://git-training.doattend.com/</a> to register.
+</p>
+
+<h2>Miscellanea</h2>
 <p>
 For details on other trainings, to stay up to date about classes that
 I offer or to arrange a custom training for a company, please refer to
@@ -139,6 +154,5 @@ For any clarifications, please contact <code>noufal at nibrahim dot net
 dot in</code>.
 </p>
 
-</p>
 
 </div>
