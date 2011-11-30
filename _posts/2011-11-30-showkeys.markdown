@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Showkeys"
+---
+
+As part of a larger plan to do some screencasts, I wrote a simple program to display keystrokes called [showkeys](https://github.com/nibrahim/showkeys). It is similar to [key-mon](http://code.google.com/p/key-mon/) but has less features and a different design that I prefer. 
+
+key-mon is more modern looking and tracks mouse as well as keyboard input. It's prettier, is themable and on the overall, something that fits into a modern desktop better than showkeys. Showkeys has it's own advantages. These are
+
+ * It doesn't rely on gtk. 
+ * It outputs stuff to the screen directly using [libXosd](http://sourceforge.net/projects/libxosd/) and so doesn't require a separate window. This makes is work better with tiling window managers like Xmonad (which I use). 
+ * It displays a history of keystrokes which is useful while doing a screencast. Key-mon does this but in an ugly way and doesn't remember modifiers. 
+ 
+It's been a while since I coded in C so it's probably rusty. The program uses the [X record extension](http://www.x.org/releases/X11R7.6/doc/libXtst/recordlib.html) to capture keystrokes from the X server and then puts them on the screen using libXosd. 
+
+Licensed under the GPLv3. Source at <https://github.com/nibrahim/showkeys>. Feedback welcome. 
