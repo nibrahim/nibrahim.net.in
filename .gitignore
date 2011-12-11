@@ -1,2 +1,3 @@
 _site
 .hyde-deployed
+*.elc

@@ -1,4 +1,4 @@
 pygments: true
 lsi: true
-exclude: [.hyde, _drafts]
+exclude: [.hyde.el, _drafts]
 paginate: 2
