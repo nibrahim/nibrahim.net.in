@@ -205,6 +205,10 @@ div.postcontent ol li p {
                         margin-left: 5%;                        
  }
 
+div.postcontent blockquote { 
+                             padding-left: 5pt;
+                             margin-left: 3px solid #eee;
+}
 
 
 
