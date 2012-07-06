@@ -73,3 +73,9 @@ Invoking it like so `python ruling.py -g2 -p3,4,3 -n2 -r25  -a30
 decently. 
 
 I hope you find it useful. 
+
+
+Update
+------
+
+I've repackaged this as a web application and you can access it directly from <http://noufalibrahim.name/rulings>. 
