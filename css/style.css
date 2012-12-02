@@ -210,6 +210,9 @@ div.postcontent blockquote {
                              margin-left: 3px solid #eee;
 }
 
+strong { 
+         font-weight: bold;
+ }
 
 
 /* Emurse styling */
