@@ -215,6 +215,13 @@ strong {
  }
 
 
+#sites li { 
+           list-style-type: disc;
+           margin-left: 2em;
+            }
+
+
+
 /* Emurse styling */
 #emurse_resume_badge_gogomonkey a	  {color: #3672a4;}
 #emurse_resume_badge_gogomonkey a:hover	  {color: #113249;}
