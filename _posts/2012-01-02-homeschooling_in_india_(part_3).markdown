@@ -110,8 +110,7 @@ schooling. How will she learn to socialise? How will she get friends?
 The question is not really a question. These are two separate issues. 
 
 The first has been
-[answered repeatedly before](http://alternativeeducationindia.net/faqs.htm#what
-about socialization).
+[answered repeatedly before](http://alternativeeducationindia.net/faqs.htm).
 
 The basic point is that have a child sit without any real guidance in
 a class of 35 to 40 children of like age is not going to help them
@@ -153,16 +152,14 @@ something worth thinking about.
 
 ## Support groups ##
 
-Bangalore seems to be, atleast in my research, the ideal place in
-India to homeschool kids. The
-[http://alternativeeducationindia.net/](Alternative Education in
-India) website contains a lot of information on groups and answers a
+Bangalore seems to be, atleast in my research, the ideal place in India to homeschool kids. The
+[Alternative Education in India](http://alternativeeducationindia.net/) website contains a lot of information on groups and answers a
 lot of FAQs. It also covers the question of certifications which I'm
 not going to repeat here. There is an community of home schoolers on
 <http://indiahomeschoolers.ning.com/> which is a social networking
 site. Announcements are usually made over there regarding events and
 meetups. A mailing list called
-[alt-ed-india])http://groups.yahoo.com/group/alt-ed-india/) is also
+[alt-ed-india](http://groups.yahoo.com/group/alt-ed-india/) is also
 quite active with a large number of homeschoolers on it. Great place
 to ask questions.
 
