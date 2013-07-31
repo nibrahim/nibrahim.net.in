@@ -7,6 +7,8 @@ date: "2013-07-31 12:33:09 +0530"
 Many people have been asking me for the scripts I use to generate
 diagrams of git repositories which I use during my trainings.
 
+![Git showdag output](/images/fileg79teo.png)
+
 It's a bunch of quick and dirty ruby scripts (my first ruby programs I
 think) which walk the repo and output `dot` programs that are then
 converted into `png` files and displayed using `qiv`.
@@ -27,6 +29,3 @@ Here's the code.
 
 <script src="https://gist.github.com/nibrahim/6119925.js"></script>
 
-and here's a sample picture drawn with the program.
-
-![Git showdag output](/images/fileg79teo.png)
