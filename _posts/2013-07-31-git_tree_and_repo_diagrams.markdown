@@ -26,3 +26,7 @@ Here's the code.
 
 
 <script src="https://gist.github.com/nibrahim/6119925.js"></script>
+
+and here's a sample picture drawn with the program.
+
+![Git showdag output](/images/fileg79teo.png)
