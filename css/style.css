@@ -195,6 +195,10 @@ div.postcontent code {
                        background-color: #F7F7F7;
 }
 
+div.postcontent pre code { 
+                           display: block;
+                           }
+
 
 div.postcontent ol li { 
                         list-style-type: decimal;
