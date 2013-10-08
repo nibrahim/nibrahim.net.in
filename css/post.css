@@ -1,3 +1,7 @@
 strong { 
          font-weight: bold;
  }
+
+pre code { 
+           display: block;
+ }
