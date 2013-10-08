@@ -1,0 +1,111 @@
+---
+layout: post
+title: "Lines"
+date: "2013-10-08 14:27:14 +0530"
+---
+
+Very often during my work, I've needed to treat a list of things (usually stored in a file one per line) as a set. This means that we should be able to to find the union of two files, intersection of two files etc. For example, if one file `A` looks like this
+
+
+    item1
+	item2
+	item3
+	item4
+
+and file `B` looks like
+
+	item3
+	item4
+	item5
+	item6
+
+Their union should be a file that has item1, item2, item3, item4, item5 and item6. The intersection would be a file that has item3 and item4. A - B would be the set of all elements in A which are not in B (in this case item1 and item2). The symmetric difference of A and B would be the set of elements in A or B but not in both. In other words (item1, item2, item5 and item6). It's possible to script my way through this tangle with the usual UNIX tools and a bunch of temporary files but I needed these often enough to justify a new tool.
+
+This was born the unimaginatively named [lines](https://github.com/nibrahim/lines) ([PyPI link](https://pypi.python.org/pypi/lines/0.1.0-a)). It gives you a command line program to do things like this. Here are a few examples.
+
+    (x)% cat examples/f1
+    a
+    b
+    c
+    d
+    (x)% cat examples/f2
+    c
+    d
+    e
+    f
+    (x)% python lines.py -u examples/f1 examples/f2 #Union
+    a
+    c
+    b
+    e
+    d
+    f
+    (x)% python lines.py -i examples/f1 examples/f2 # Intersection
+    c
+    d
+    (x)% python lines.py -d examples/f1 examples/f2 # difference (f1 - f2)
+    a
+    b
+    (x)% python lines.py -s examples/f1 examples/f2 # symmetric difference (xor)
+    a
+    b
+    e
+    f
+    (x)%
+
+I've found this useful when I need to deal with lists of file names or lists of tests.
+
+I added two more features which are more flaky but still useful. The first one squeezes empty lines from a file.
+
+
+    (x)% cat examples/f3
+    a
+    b
+    
+    c
+    
+    d
+    
+    e
+    f
+    (x)% python lines.py --squeeze examples/f3
+    a
+    b
+    c
+    d
+    e
+    f
+    (x)%
+	
+The other is more interesting which I first wrote while working for a an Internet Archive project. With a very long set of elements that are almost similar, it's useful to be able to figure out anomalies. In my case, I had a list of item name. Each item name looked something like this `cuil-domainshard-corpus5-large-merge-rev1.00478-of-25000` The `00478` would change. There would be a few items in this list that didn't "fit the pattern" usually caused by an interrupted transfer or something similar. It's useful to be able to weed these out quickly. The `--patterns` option looks through the entire list and partitions the set into subsets. The elements of a subset will all have an upper bound on their [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) from one another. This means that for a file like this
+
+    Archive.001-of-020.part
+    Archive.002-of-020.part
+    Archive.003-of-020.part
+    Archive.004-of-020.part
+    Archive.005-of-020.part
+    Archive.006-of-020.part
+    Archive.007-of-020.part
+    .Archive.008-of-020.part.zbnrw
+    Archive.009-of-020.part
+    Archive.010-of-020.part
+    Archive.011-of-020.part
+    Archive.012-of-020.part
+    Archive.013-of-020.part
+    Archive.014-of-020.part
+    Archive.015-of-020.part
+    Archive.016-of-020.part
+    Archive.017-of-020.part
+    Archive.018-of-020.part
+    Archive.019-of-020.part
+    Archive.020-of-020.part
+
+Running `python lines.py --patterns examples/f6 -l 5`, would give me
+
+	19 elements
+    1 elements - {'.Archive.008-of-020.part.zbnrw'}
+
+This means that there are 19 elements in one subset and 1 in another. The `-l` option allows us to tune the upper bound on the levenshtein distance and the `-p` parameter allows us to configure a "outlier percentage". If the number of elements in a subset is less than this percentage, the elements will be printed out in the output.
+
+This is an alpha release so it's probably buggy. Comments and feedback are welcome.
+
