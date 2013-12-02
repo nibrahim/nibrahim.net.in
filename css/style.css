@@ -1,6 +1,6 @@
 body { 
        background-color: #fff;
-       font-size: 10pt;
+       font-size: 12pt;
        color: #333;
        font-family: arial, san-serif; 
        }
@@ -92,7 +92,7 @@ ul.contact li {
  }
 
 h2 { 
-     margin: 5pt 0;
+     margin: 10pt 0 5pt 0;
      text-align: left;
      font-size: 18pt;
      font-style:italic;
@@ -100,6 +100,7 @@ h2 {
      background-image: url("/images/brokenline.png");
      background-repeat: repeat-x;
      background-position: bottom center;
+     
      } 
 
 h3 { 
@@ -161,7 +162,7 @@ div.credits {
 /* Post content */
 
 div.postcontent { 
-                  line-height: 18pt;
+                  line-height: 20pt;
  }
 
 p { 
@@ -181,11 +182,11 @@ div.postcontent ul li ul li {
  }
 
 div.postcontent h2 { 
-                     font-size:12pt;
+                     font-size:18pt;
                      text-align: left;
                      border-bottom: 1px dotted #ddd;
                      background-image: none;
-                     margin-top: 3pt;
+                     margin-top: 10pt;
  }
 
 
@@ -193,10 +194,15 @@ div.postcontent h2 {
 
 div.postcontent code {  
                        background-color: #F7F7F7;
+                       border: 1px solid #e0e0e0;
 }
 
 div.postcontent pre code { 
                            display: block;
+                           width: 100%;
+                           padding: 2em;
+                           border: 1px solid #e0e0e0;
+                           overflow:auto;
                            }
 
 
