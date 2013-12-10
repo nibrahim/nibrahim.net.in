@@ -563,4 +563,9 @@ The entire program looks like this now
 
 Table reflection doesn't work (I don't need it now). I haven't put this into production so I don't know what problems I'll face then.
 
-Feedback is welcome. 
+Feedback is welcome.
+
+## Update (10 Dec 2013)
+
+This was accepted as a [patch into SQLAlchemy](https://github.com/zzzeek/sqlalchemy/commit/d5a86d8f86c0eef8968c8915be19b94ad4682151) so you don't need to do this anymore. The `==` overloading was not used. Instead, the Python `.match` operator implements the `@@` operator on the sql side. I'll leave this article up here though as a tutorial on adding custom types to SQLAlchemy.
+
