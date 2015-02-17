@@ -4,6 +4,8 @@ title: "Git tree and repo diagrams"
 date: "2013-07-31 12:33:09 +0530"
 ---
 
+*Update:* The original version used the `grit` gem which is now deprecated. I've updated the scripts to use `rugged` which are the offical ruby bindings for `libgit2`.
+
 Many people have been asking me for the scripts I use to generate
 diagrams of git repositories which I use during my trainings.
 
