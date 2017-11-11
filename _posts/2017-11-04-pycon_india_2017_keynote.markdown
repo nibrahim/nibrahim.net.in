@@ -185,6 +185,6 @@ Some of the things I learned from this whole affair
 
 3. My time with the Toastmasters club in Kozhikode taught me subtle skills that I wasn't aware I learned. Giving speeches is serious business and I have a lot to learn in that department. 
 
-If you want to follow my practise with calligraphy, I put up my stuff on http://calligraffiti.in/ and tweet about it at [@incalligraffiti](https://twitter.com/incalligraffiti).
+If you want to follow my practise with calligraphy, I put up my stuff on <http://calligraffiti.in/> and tweet about it at [@incalligraffiti](https://twitter.com/incalligraffiti).
    
    
