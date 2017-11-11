@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PyCon India 2017 keynote"
+title: "Creating a presentation by hand using calligraphy"
 date: "2017-11-04 22:44:39 +0530"
 ---
 
