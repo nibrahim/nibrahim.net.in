@@ -57,11 +57,9 @@ performance of a kata. Judges award points based on various criteria
 like technical skill, athletic performance etc. It's a visual treat to
 see high quality kata performance especially at the world level. The
 first example that comes to mind is Rika Usami performing the kata
-called Chatanyara Kushanku here <iframe width="560" height="315"
-src="https://www.youtube.com/embed/iiiznDpoapQ" title="YouTube video
-player" frameborder="0" allow="accelerometer; autoplay;
-clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
+called Chatanyara Kushanku here 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iiiznDpoapQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 However, thanks to the judging criteria, this is more or less like a
 dance. If you compare the way in which Higaonna (who's not a fan of
